@@ -577,14 +577,9 @@ button {
     color: #ffffff;
     cursor: pointer;
     background-color: #4d5ae5;
-
-        border: none;
-        border-radius: 4px;
-}
-/* button .footer-form-btn {
     border: none;
     border-radius: 4px;
-} */
+}
 .frame {
     margin-left: 16px;
     fill: #fff;
@@ -836,7 +831,10 @@ button {
 .modal-btn {
     background-color: #4d5ae5;
 }
-
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
+    fill: #ffffff;
+}
 .modal-btn:hover {
     background-color: #404bbf;
 }
@@ -848,6 +846,5 @@ button {
 }
 .input-user-click:checked+.form-label-click .click {
     fill: #fff;
-        /* Наприклад, змінюємо колір галочки */
 }
  /* #endregion Checkbox */
