@@ -667,9 +667,6 @@ button {
 .btn-close:focus {
     background-color: #404bbf;
     border: none;
-}
-.btn-close:hover .icon-close,
-.btn-close:focus .icon-close {
     fill: #ffffff;
 }
 .icons-close {
