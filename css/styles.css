@@ -667,11 +667,14 @@ button {
 .btn-close:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 .icons-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
+}
+.btn-close:hover .icons-close,
+.btn-close:focus .icons-close {
+    fill: #ffffff;
 }
 .text-modal {
     font-weight: 500;
@@ -830,10 +833,6 @@ button {
 }
 .modal-btn {
     background-color: #4d5ae5;
-}
-.btn-close:hover .icon-close,
-.btn-close:focus .icon-close {
-    fill: #ffffff;
 }
 .modal-btn:hover {
     background-color: #404bbf;
