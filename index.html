@@ -56,7 +56,7 @@
         <section class="hero">
             <div class="container title-content">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- #endregion hero -->
@@ -323,7 +323,7 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="image-captions">
-                            <img src="./images/meditation-app.jpg" alt="Meditation App" width="360">
+                            <img src="./images/mark-guerrero.jpg" alt="Meditation App" width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App ·
@@ -443,8 +443,87 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-container">
+                <p class="footer-form-text">Subscribe</p>
+
+                <form class="footer-form">
+                    <label class="footer-form-label">
+                        <input class="footer-form-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">Subscribe
+                        <svg class="frame" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+
+                        </svg></button>
+                </form>
+
+            </div>
+
         </div>
     </footer>
+
+    <!--#region Modal-->
+    <div class="backdrop" data-modal>
+
+        <div class="modal">
+            <button class="btn-close" type="button" data-modal-close>
+                <svg class="icons-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-x"></use>
+                </svg>
+            </button>
+            <p class="text-modal">Leave your contacts and we will call you back</p>
+
+            <form class="form-inputs" name="imputs">
+                <div class="form">
+                    <label for="user-name" class="form-label">Name</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="user-name" type="text" name="user-name">
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="user-tel" class="form-label">Phone</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="user-tel" type="tel" name="user-tel">
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="user-email" class="form-label">Email</label>
+                    <div class="icon-input">
+                        <input class="form-input" id="user-email" type="email" name="user-email">
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-comment">
+                    <label for="user-comment" class="form-label">Comment</label>
+                    <textarea class="form-input-area" id="user-comment" name="user-comment" rows="10"
+                        placeholder="Text input"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input class="input-user-click visually-hidden" id="user-privacy" type="checkbox"
+                        name="user-privacy" value="true">
+                    <label for="user-privacy" class="form-label-click"> <span class="form-label-click-part">
+                            <svg class="click" width="10" height="8">
+                                <use href="./images/icons.svg#icon-click-modal"></use>
+                            </svg></span>I accept the terms and conditions of the <a href="#" class="link-click">Privacy
+                            Policy</a>
+                    </label>
+                </div>
+                <button class="modal-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <!--#endregion Modal-->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
